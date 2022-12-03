@@ -19,10 +19,12 @@ public class Main {
         String inputString = scanner.nextLine(); // Подчищаем то, что осталось с прошлого раза
         System.out.print("Введите строку: ");
         inputString = scanner.nextLine();
+        int inputStringLength = inputString.length();
+        char charAtOh = inputString.charAt(0);
         i = 0;
 
-        while(i < inputString.length()) {
-            System.out.printf("%d. %s\n", ++i, inputString.charAt(0));
+        while(i < inputStringLength) {
+            System.out.printf("%d. %s\n", ++i, charAtOh);
         }
     }
 }
